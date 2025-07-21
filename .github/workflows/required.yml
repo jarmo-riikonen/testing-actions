@@ -1,4 +1,4 @@
-name: Skippable workflow but required
+name: Workflow and required
 on:
   pull_request:
   workflow_dispatch:
@@ -9,4 +9,4 @@ jobs:
     steps:
       - name: one
         run: |
-          echo "hello world"
+          exit 0
