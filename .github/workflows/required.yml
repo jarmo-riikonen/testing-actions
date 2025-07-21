@@ -1,0 +1,11 @@
+on:
+  pull_request:
+
+jobs:
+  required-skippable:
+    runs-on: ubuntu-latest
+    if: false
+    steps:
+      - name: one
+        run: |
+          echo "hello world"
