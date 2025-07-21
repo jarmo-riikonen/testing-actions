@@ -4,8 +4,9 @@ on:
   workflow_dispatch:
 
 jobs:
-  required:
+  required-skippable:
     runs-on: ubuntu-latest
+    if: false
     steps:
       - name: one
         run: |
